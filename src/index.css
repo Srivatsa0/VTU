@@ -1,13 +1,729 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+.second-navbar{
+  background-color: black;
+  display: grid;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+}
+.second-navbar li{
+  list-style-type: none;
+  display: inline;
+}
+.second-navbar a
+{
+  text-decoration: none;
+  color: white;
+  margin: 0px 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.second-navbar a:hover{
+  border-bottom: 2px solid white;
+}
+.college-adding
+{
+  background-color:rgba(74, 238, 145, 0.22);
+}
+.college-adding h1{
+  text-align: center;
+ padding: 20px 0px;
+}
+.college-form
+{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  font-size: 30px;
+  /* height: 500px; */
+  
+  padding: 0px 50px;
+}
+form label,input{
+  margin: 10px 0px;
+}
+form input{
+  height: 30px;
+}
+.college-add-submit button
+{
+  width: 150px;
+  height: 40px;
+  font-size:20px ;
+  border-radius: 10px;
+  margin-left: 1070px;
+}
+.college-add-submit button:active
+{
+  background-color: aqua;
+  border: none;
+  color: white;
+}
+.about-page{
+  height: auto;
+}
+.about-page h1{
+  margin: 20px 0px;
+}
+.about-history h2{
+  padding : 10px 10px;
+}
+.about-history p {
+  padding: 0px 30px;
+  margin: 20px 0px;
+  font-size: 16px;
+}
+.about-campus h2 
+{
+  margin: 10px 0px ;
+  padding: 0px 10px;
+}
+.about-campus p {
+  padding: 0px 30px;
+  margin: 10px 0px;
+}
+.about-campus table
+{
+  margin: 20px 40px;
+}
+.about-campus table,th,td
+{
+  border-collapse: collapse;
+  padding: 0px 30px;
+}
+.about-campus table td
+{
+  padding: 5px 0px;
+}
+.about-campus table th{
+  padding: 5px 0px;
+}
+.about-campus th{
+  background-color: bisque;
+}
+.about-campus td{
+  background-color: rgb(183, 224, 210);
+}
+.about-academics h2{
+  padding: 0px 10px ;
+  margin: 10px 0px;
+}
+.about-academics h3
+{
+  padding: 0px 10px ;
+  margin: 10px 0px;
+}
+.about-academics p{
+  padding: 0px 30px;
+}
+.about-academics table {
+  margin: 20px 50px;
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+.about-academics table th {
+  background-color: bisque;
+  padding: 5px 0px;
+}
+.about-academics table td
+{
+  padding: 5px 0px;
+}
+.about-academics td{
+  background-color: rgb(183, 224, 210);
+}
+#grading-table table
+{
+  border-collapse: collapse;
+}
+#grading-table table th {
+  padding: 5px 0px;
+
+}
+#grading-table table td
+{
+  padding: 5px 0px;
+  align-items: center;
+}
+.grading-details
+{
+  padding: 0px 80px;
+}
+.footer 
+{
+  background-color: rgb(14, 13, 13);
+  color: white;
+  min-height: auto;
+}
+.footer h1{
+  padding: 20px 0px;
+}
+.footter-bottom
+{
+  font-size: 20px;
+  padding: 10px 0px;
+}
+.footer-last
+{
+  display: flex;
+  justify-content: space-between;
+}
+#powered
+{
+  color: coral;
+}
+.footer-last span{
+  padding: 10px 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.enquiry-title
+{
+  background: url("https://media.istockphoto.com/id/1224436090/photo/office-desk-table-with-supplies-flat-lay-business-workplace-and-objects-top-view-copy-space.jpg?s=612x612&w=0&k=20&c=wCSc0NeS-XEavi-0zVrioYMvEH2x7tjFN589ywVui3c=");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  color: white;
+  box-sizing: border-box;
+}
+.enquiry-title h1
+{
+  font-size: 50px;
+ position: absolute;
+ top: 40%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+.helpline
+{
+  display: flex;
+  height: 500px;
+  width: 98vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+}
+.helpline-numbers
+{
+  display: grid;
+}
+.helpline-numbers span
+{
+  padding: 10px 0px;
+  font-size: 20px;
+}
+.work-hours{
+  display: grid;
+}
+.chancellor
+{
+  width: 100%;
+  height: 250px;
+  background-color: rgb(124, 189, 247);
+  padding: 20px 50px;
+}
+.chancellor-details
+{
+  display: grid;
+  background-color: white;
+  width: 350px;
+  height: 200px;
+  padding: 10px 10px;
+}
+#chancelor{
+  font-size: 30px;
+}
+.Register{
+  width: 100%;
+  height: 280px;
+  background-color:rgb(124, 189, 247);
+  padding: 20px 1000px;
+}
+.register-details
+{
+  display: grid;
+  background-color: white;
+  width: 350px;
+  height: 225px;
+  padding: 10px 10px;
+}
+.register-tele
+{
+  margin-top: 30px;
+  display: grid;
+}
+#register{
+  font-size: 30px;
+}
+.registrar-evaluation{
+  background-color:rgb(124, 189, 247);
+  width: 100%;
+  height: 300px;
+  padding: 20px 50px;
+}
+.registrar-details
+{
+  background-color: white;
+  display: grid;
+  width: 350px;
+  height: 250px;
+  padding: 10px 10px;
+}
+.evaluation-tele{
+  margin-top: 30px;
+  display: grid;
+}
+.evaluation{
+  font-size: 30px;
+}
+.home-image{
+  width: 100%;
+}
+.home-info{
+  width: 75%;
+  margin: auto;
+}
+.vtu-strength{
+  background-color: orange;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100px;
+}
+#numbers{
+  font-size: 50px;
+  font-weight: bold;
+}
+.college-strength
+{
+  display: grid;
+  text-align: center;
+}
+.vtu-started{
+  display: grid;
+  text-align: center;
+}
+.student-strength{
+  display: grid;
+  text-align: center;
+}
+.strength{
+  font-size: 20px;
+}
+.vtu-moto
+{
+  width: 75%;
+  margin: auto;
+}
+.vtu-mission
+{
+  display: flex;
+  align-items: center;
+  height: 150px;
+}
+.vtu-moto span{
+  font-size: 30px;
+  color: orange;
+  font-weight: bold;
+}
+.vtu-orders{
+  display: flex;
+  height: 150px;
+  align-items: center;
+}
+.vtu-goal{
+  display: flex;
+  height: 150px;
+  align-items: center;
+}
+.goal-details{
+  padding: 50px;
+}
+.orders-details{
+  padding: 50px;
+}
+.mission-details{
+  padding: 50px;
+}
+.home-button button{
+  background-color: orange;
+  font-weight: bold;
+  width: 150px;
+  border-radius: 10px;
+  height: 50px;
+  position: absolute;
+  left: 45%;
+  border: none;
+}
+.about-vidyashankar
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  height: 400px;
+  margin: 80px 0px 0px;
+  margin-left: 200px;
+}
+.vidyashankar-about{
+  padding: 20px;
+}
+.vidyashankar-about span{
+  color: orange;
+  font-weight: bold;
+  font-size: 20px;
+}
+.vidyashankar-about p{
+  padding: 40px 0px;
+}
+.college-list{
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.student-details-submit button{
+  width: 130px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: aqua;
+  margin-left: 1080px;
+  margin-bottom: 10px;
+}
+.student-flex{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px 0px;
+}
+.student-updates{
+  text-align: center;
+}
+.delete-sudent button{
+  width: 70px;
+  height: 30px;
+  margin: 0px 15px;
+  background-color: rgb(143, 243, 252);
+  border: none;
+  border-radius: 5px;
+}
+.about-student{
+  margin-top: 30px;
+}
+.student-table{
+  margin: auto;
+  margin-bottom: 30px;
+}
+#update{
+  margin-bottom: 20px;
+}
+.page-not-found{
+  margin: auto;
+  text-align: center;
+  width: 600px;
+  height: 350px;
+  padding: 50px 50px;
+}
+.error-type{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+.error-type span{
+  font-size: 50px;
+  color: rgb(121, 202, 249);
+}
+.pnt-messsage p{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.pnt-messsage a{
+  text-decoration: none;
+  background-color: rgb(14, 14, 14);
+  color: white;
+  padding: 8px 8px ;
+  border-radius: 3px ;
+}
+.college-flex
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0px;
+}
+.college-buttons button{
+  width: 70px;
+  height: 25px;
+  font-weight: bold;
+  background-color: aqua;
+  margin: 5px;
+  border: none;
+  border-radius: 3px ;
+} 
+.update-delete-college{
+  text-align: center;
+}
+.college-name h2{
+  margin-top: 30px;
+}
+.college-student-strength{
+  margin: 20px;
+}
+.student-strength-table{
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.lds-facebook {
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: 47%;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: rgb(4, 4, 4);
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0%{
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+.single-collegedetails{
+  height: 100vh;
+ } 
+.about-student{
+  height: 50vh;
+}
+.update-student{
+  height: 100vh;
+}
+.update-student{
+  height: 100%;
+}
+.update-student h1{
+  margin-top: 20px;
+}
+.students-data{
+  height: 70vh;
+}
+.students-data h1{
+  margin: 20px 0px;
+}
+.students-data a{
+  margin: 10px 0px;
+  float:right;
+}
+.collegelist-display {
+  height: 80vh;
+}
+.collegelist-display h1{
+  margin: 20px;
+}
+.collegelist-display a{
+  float: right;
+  margin: 10px 0px;
+  text-decoration: none;
+  color: black;
+}
+#add-college{
+  background-color: rgb(57, 132, 197);
+  height: 30px;
+   padding: 3px 4px;
+   border-radius: 4px;
+   color: rgb(249, 246, 246);
+}
+.students-data th{
+  background-color: antiquewhite;
+}
+.students-data table{
+  border-collapse: collapse;
+}
+#student-add {
+  text-decoration: none;
+  background-color: rgb(57, 132, 197);
+  height: 30px;
+   padding: 3px 4px;
+   border-radius: 4px;
+   color: rgb(249, 246, 246);
+} 
+#link-add-student{
+  text-decoration: none;
+  color: black;
+}
+.collegelist-display th{
+  background-color: rgb(170, 241, 241);
+}
+.collegelist-display table{
+  border-collapse: collapse;
+}
+.college-update-link {
+  background-color:  rgb(57, 132, 197); 
+  color: white;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 4px;
+}
+.error{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  text-align: center;
+}
+.error p{
+  font-size: 20px;
+  margin: 20px 0px;
+}
+.error a{
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  padding: 8px 8px;
+  border-radius: 3px;
+}
+.signup-page{
+  height: 500px;;
+  width: 400px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+.page-inputs span{
+  font-size: 30px;
+}
+#signup-email{
+  width: 300px;
+  height: 30px;
+}
+#signup-email::placeholder
+{
+  padding: 0px 10px;
+  font-weight: bold;
+}
+#signup-password{
+  width: 250px;
+  height: 30px;
+}
+
+#signup-password::placeholder{
+  padding: 0px 10px;
+  font-weight: bold;
+}
+#remeber-me{
+  font-size: 20px;
+}
+input[type=checkbox]{
+  height: 15px;
+  width: 30px;
+  margin-bottom: 20px;
+  accent-color: black;
+}
+.page-inputs button{
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+#show-password {
+  width: 50px;
+  font-size: 10px;align-items: center  ;
+}
+.college-form input::placeholder{
+  padding: 0px 10px;
+  font-weight: bold;
+}
+#campus-table{
+  text-align: center;
+  margin: auto;
+}
+#campus-table-body td{
+  padding: 10px 10px;
+}
+#academic-courses-data td{
+  padding: 10px 10px;
+}
+.academics-courses table {
+  margin: auto;
+}
+.academics-courses-p2{
+  margin: 10px;
+}
+.academics-courses-p1{
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+#grading-table {
+  margin: auto;
+  text-align: center;
+}
+#grading-table th{
+  width: 150px;
+}
+#grading-table td{
+  padding: 10px;
+}
+.grading-details{
+  margin: 10px;
+  font-size: 20px;
+}
+.percentage-cal{
+  font-size: 20px;
+  margin: 10px;
+}
+.about-history p{
+  font-size: 18px;
+}
+.about-campus p{
+  font-size: 18px;
+}
+.about-academics p{
+  font-size: 18px;
 }
